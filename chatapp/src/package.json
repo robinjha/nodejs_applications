@@ -1,0 +1,12 @@
+{
+  "name": "my-todolist",
+  "version": "0.1.0",
+  "dependencies": {
+    "express": "~4.13.3",
+    "ejs": "~2.3.4",
+    "cookie-session": "~1.1.0",
+    "body-parser": "~1.10.2"
+  },
+  "author": "Robin Jha",
+  "description": "Basic to do list application"
+}
