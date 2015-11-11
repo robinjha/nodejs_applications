@@ -1,12 +1,14 @@
-var cookieSession = require('cookie-session')
 var express = require('express');
-var app = express();
+var cookieSession = require('cookie-session')
+var bodyParser = require('body-parser')
 
-app.set('trust proxy', 1)
+var urlencodedParser = bodyParser.urlencoded({extended : false})
+
+var app = express();
 
 app.use(cookieSession({
     name : 'session',
-    keys : ['key1','key2']
+    keys : ['todosecret']
 }))
 
 app.get('/todo', function(req, res){
